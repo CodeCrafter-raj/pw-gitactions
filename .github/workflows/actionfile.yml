@@ -1,0 +1,19 @@
+name: "Action File Workflow"
+
+# Controls when the actions will run. Triggers the workflow on push to master or production branch
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - test
+
+jobs:
+  hello_world: # Corrected: hellow_world -> hello_world
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print hello world"
+        run: echo "Push has been done on either main or master or test" # Corrected: Hellow World -> Hello World
+      - name: "print current date"
+        run: date
