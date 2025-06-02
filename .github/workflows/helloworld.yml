@@ -14,3 +14,5 @@ jobs:
     steps:
       - name: "Print hello world"
         run: echo "Hello World" # Corrected: Hellow World -> Hello World
+      - name: "print current date"
+        run: date
